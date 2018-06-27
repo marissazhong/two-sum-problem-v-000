@@ -74,7 +74,7 @@ function binarySearchTwoSum(array, sum) {
   return results;
 }
 
-//console.log(binarySearchTwoSum([2,3,4,3,6,7],6));
+console.log(binarySearchTwoSum([2,3,4,3,6,7],6));
 
 function binaryMatch(sorted_array, num) {
   let midpoint = Math.floor(sorted_array.length/2);
