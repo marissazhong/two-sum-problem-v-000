@@ -90,12 +90,12 @@ function binaryMatch(sorted_array, num) {
     if (sorted_array[0] == num) {
       return true;
     }
-  } else if (num == sorted_array[midpoint+1]) {
+  } else if (num == sorted_array[midpoint]) {
     return true;
-  } else if (num > sorted_array[midpoint+1]) {
-    return binaryMatch(sorted_array.slice(midpoint+1),num);
-  } else if (num < sorted_array[midpoint+1]) {
-    return binaryMatch(sorted_array.slice(0,midpoint+1),num);
+  } else if (num > sorted_array[midpoint]) {
+    return binaryMatch(sorted_array.slice(midpoint),num);
+  } else if (num < sorted_array[midpoint]) {
+    return binaryMatch(sorted_array.slice(0,midpoint),num);
   }
   return false;
 }
