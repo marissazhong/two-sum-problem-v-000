@@ -99,7 +99,7 @@ function binaryMatch(sorted_array, num) {
   return false;
 }
 
-console.log(binaryMatch([2,3,4,6,7],3));
+//console.log(binaryMatch([2,3,4,6,7],3));
 
 function hashTwoSum(arr,sum) {
   let arr_hash = {};
