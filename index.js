@@ -64,12 +64,12 @@ function bruteForceTwoSum(arr,sum) {
 let results = [];
 
 function binarySearchTwoSum(array, sum) {
-  for (var i = 0; i < array.length; i++) {
-    
+  let sorted_array = mergeSort(array);
+  for (var i = 0; i < sorted_array.length; i++) {
+
   }
 
-  let sorted_array = mergeSort(array);
-  
+
   let midpoint = Math.floor(sorted_array.length/2);
   if (sorted_array.length == 1) {
     if (sorted_array[0] == num) {
