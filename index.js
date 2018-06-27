@@ -71,21 +71,7 @@ function binarySearchTwoSum(array, sum) {
       results.push([sorted_array[i],sum-sorted_array[i]]);
     }
   }
-
-
-  let midpoint = Math.floor(sorted_array.length/2);
-  if (sorted_array.length == 1) {
-    if (sorted_array[0] == num) {
-      return true;
-    }
-  } else if (num == sorted_array[midpoint+1]) {
-    return true;
-  } else if (num > sorted_array[midpoint+1]) {
-    return binaryMatch(sorted_array.slice(midpoint+1));
-  } else if (num < sorted_array[midpoint+1]) {
-    return binaryMatch(sorted_array.slice(0,midpoint+1));
-  }
-  return false;
+  return results;
 }
 
 //console.log(binarySearchTwoSum([2,3,4,3,6,7],6));
