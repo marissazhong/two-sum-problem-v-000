@@ -67,7 +67,7 @@ function binarySearchTwoSum(array, sum) {
   let sorted_array = mergeSort(array);
   let results = [];
   for (var i = 0; i < sorted_array.length; i++) {
-    if (binaryMatch(sorted_array.splice(i,1), sum-sorted_array[i]) == true){
+    if (binaryMatch(sorted_array.splice(i,1), sum-sorted_array[i])){
       results.push([sorted_array[i],sum-sorted_array[i]]);
     }
   }
