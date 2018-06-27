@@ -96,7 +96,7 @@ function binaryMatch(sorted_array, num) {
   } else if (num < sorted_array[midpoint+1]) {
     return binaryMatch(sorted_array.slice(0,midpoint+1));
   }
-  return false;
+  //return false;
 }
 
 console.log(binaryMatch([2,3,4,6,7],3));
